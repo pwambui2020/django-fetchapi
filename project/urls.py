@@ -23,6 +23,6 @@ urlpatterns = [
     path('api/', include('app.urls')),   
     path('api/auth/', include('knox.urls')),   
     path('', TemplateView.as_view(template_name="home.html"), name='home'),
-    path('send-form-email/', views.SendFormEmail.as_view(), name='send_email'),
+    path('send-form-email/', views.SendFormEmail.as_view(), name='send_email'),  
     
 ]
