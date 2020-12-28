@@ -28,3 +28,4 @@ class SendFormEmail(View):
         # Redirect to same page after form submit
         messages.success(request, ('Email sent successfully.'))
         return redirect('home') 
+    
